@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* reset code */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #111;
+  transition: .3s;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* common css */
+.pt-80{
+  padding-top: 80px;
+}
+.pb-80{
+  padding-bottom: 80px;
+}
+
+
+/* header area css  */
+.header-area {
+  padding: 25px 0;
+  background-color: #f2f2f2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo a:hover {
+  color: #ff7720;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li a {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.menu ul li a:hover {
+  color: #ff7720;
+}
+/* banner area css */
+.banner-area{
+  padding-top: 20px;
+}
+
+.banner img {
+  border: 3px solid #ddd;
+  padding: 3px;
+  border-radius: 5px;
+  
+}
+
+/* section title css */
+
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+} 
+.section-title h4 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.section-title p {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* about area css */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.single-about {
+  flex-basis: 32.3%;
+  padding: 15px 25px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+}
+
+.single-about i {
+  font-size: 30px;
+}
+
+.single-about h2 {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.single-about p {
+  text-transform: capitalize;
+  color: #777;
+}
+
+.single-about:hover{
+  box-shadow: 3px 3px 15px 5px #ddd;
+  border-color: #ff7720;
+  background-color: #fff;
+}
+
+/* services css */
+
+.services-area {
+  background-color: #f4f4f4;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-service {
+  flex-basis: 32%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.single-service h4 {
+  background-color: teal;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #fff;
+}
+
+.single-service p {
+  margin: 15px 0;
+  color: #777;
+  text-transform: capitalize;
+}
+
+.single-service a {
+  display: inline-block;
+  background-color: teal;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.single-service a:hover {
+  background-color: #ff7720;
+}
+
+/* gallery css */
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-gallery {
+  flex-basis: 24%;
+  margin-bottom: 15px;
+}
+
+.single-gallery img {
+  border: 3px solid #ddd;
+  padding: 3px;
+}
+
+/* contact area css */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-form{
+  flex-basis: 65%;
+}
+.contact-address{
+  flex-basis: 30%;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-area input[type="submit"] {
+  background-color: #ff7720;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: unset;
+  transition: .5s;
+}
+
+.contact-area input[type="submit"]:hover {
+  background-color: teal;
+}
+
+.single-address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-address i {
+  font-size: 22px;
+  margin-right: 15px;
+  margin-top: -20px;
+
+}
+
+.single-address h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.single-address h4 span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* footer css  */
+.footer-area {
+  background-color: teal;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
